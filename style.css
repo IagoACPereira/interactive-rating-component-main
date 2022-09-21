@@ -1,0 +1,134 @@
+@media screen and (max-width: 1440px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    html,
+    body {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: hsl(216, 12%, 8%);
+        font-family: Overpass-Regular;
+    }
+    
+    #star_icon {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 45px;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    #rating,
+    #tank_you  {
+        width: 300px;
+        border-radius: 30px;  
+        padding: 30px;
+        background-image: linear-gradient(to bottom, hsl(213, 19%, 18%), hsl(228, 7%, 13%));
+        margin-bottom: 10px;
+        color: hsl(217, 12%, 63%);
+    }
+
+    #rating h1,
+    #tank_you h1 {
+        color: hsl(0, 0%, 100%);
+    }
+    
+    #selection {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }    
+
+    #star_icon,
+    #rating h1, 
+    #rating p,
+    #selection,
+    #tank_you p,
+    #tank_you h1,
+    #tank_you img {
+        margin-bottom: 15px;
+    }
+    
+    .btn_options {
+        width: 45px;
+        height: 45px;
+        border-radius: 45px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.1);
+        color: hsl(217, 12%, 63%);
+        cursor: pointer;
+    }
+
+    .btn_options:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+        color: hsl(0, 0%, 100%);
+    }
+
+    .btn_options:active {
+        background-color: hsl(25, 97%, 53%);
+        color: hsl(0, 0%, 100%);
+    }
+    
+    #btn {
+        width: 100%;
+        border: none;
+        background-color: hsl(25, 97%, 53%);
+        line-height: 40px;
+        border-radius: 40px;
+        color: hsl(0, 0%, 100%);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        cursor: pointer;
+    }
+
+    #btn:active {
+        background-color: hsl(0, 0%, 100%);
+        color: hsl(25, 97%, 53%);
+    }
+    
+    #tank_you {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #tank_you p {
+        text-align: center;
+    }
+
+    #selected {
+        background-color: rgba(255, 255, 255, 0.1);
+        height: 15px;
+        line-height: 15px;
+        font-size: 14px;
+        padding: 5px 15px;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        color: hsl(25, 97%, 53%);
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    #rating,
+    #tank_you  {
+        width: 75%;
+    }
+}
+
+@font-face {
+    font-family: Overpass-Regular;
+    src: url(fonts/Overpass-Regular.woff);
+}
+
+@font-face {
+    font-family: Overpass-Bold;
+    src: url(fonts/Overpass-Bold.woff);
+}
